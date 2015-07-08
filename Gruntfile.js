@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   var globalConfig = {
-    themeDir: 'themes/division'
+    themeDir: 'themes/gpsg'
   };
 
   // Project configuration.
