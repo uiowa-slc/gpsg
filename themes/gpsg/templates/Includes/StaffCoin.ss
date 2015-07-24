@@ -1,11 +1,11 @@
 <li>
       <% if $Photo %>
       <a href="$Link" class="staff-link">
-            <img class="b-lazy staff-img" src="copy.jpg">
+            <img class="b-lazy staff-img" src="copy2.jpg">
       </a>
       <% else %>
       <a href="$Link" class="staff-link">
-            <img src="copy.jpg">
+            <img src="{$ThemeDir}/images/copy2.jpg">
       </a>
       <% end_if %>
       <p class="staff-name">

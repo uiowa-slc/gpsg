@@ -1,7 +1,7 @@
 .staff-coin-list{
   margin-top: 4px;
   margin-bottom: 4px;
-  text-align: center;
+  // text-align: center;
 
 
   li{
@@ -93,11 +93,16 @@
   }
 }
 
+.staff-name {
+  text-align: center;
+}
 .staff-coin-list.large{
       margin: 0;
       li{
 
         margin-left:0;
+
+
         a.staff-link{
           margin-left: 5px;
           margin-right: 5px;
