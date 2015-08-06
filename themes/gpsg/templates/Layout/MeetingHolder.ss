@@ -6,8 +6,7 @@
 	<h1>$Title</h1>
 			$Content
 			
-				<h2> $Title </h2>
-					$Content
+
 				<table class="meetings">
 			
 				<tr>
