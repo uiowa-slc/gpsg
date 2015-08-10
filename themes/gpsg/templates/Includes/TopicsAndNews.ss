@@ -9,12 +9,16 @@
                     <div class="col-1-4 mod mod-news">
                     	<h3 class="mod-title">Initiatives</h3>
 				        <ul class="unstyled">
-				        	<li><a href="/vp-for-student-life/initiatives/iowa-grow/">Iowa GROW</a></li>
+<%-- 				        <li><a href="/vp-for-student-life/initiatives/iowa-grow/">Iowa GROW</a></li>
 				        	<li><a href="/vp-for-student-life/initiatives/multiculturalism-and-diversity/">Multiculturalism and Diversity</a></li>
 				        	<li><a href="/vp-for-student-life/initiatives/collegiate-readership-program/">Collegiate Readership Program</a></li>
 				        	<li><a href="/vp-for-student-life/initiatives/uslsp-task-force/">(USLSP) Task Force</a></li>
-				        	<li><a href="/vp-for-student-life/initiatives/partnership-for-alcohol-safety/">Partnership for Alcohol Safety</a></li>
-				        	
+				        	<li><a href="/vp-for-student-life/initiatives/partnership-for-alcohol-safety/">Partnership for Alcohol Safety</a></li> --%>
+				        	<% loop Page(initiatives) %>
+				        		<% loop $Children %>
+                              		<li> <a href="$Link"> $Title </a> </li>
+								<% end_loop %>	
+				        	<% end_loop %>
 				        </ul>
 				        <!--
                     	<% with Page(news) %>

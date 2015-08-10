@@ -10,7 +10,7 @@
 	    	<h1>$Title</h1>
 	    	$Form
 	    	$Content
-			<ul class="initiatives-list">
+			<ul class="large-block-grid-2 initiatives-list">
 			
                   <% loop $Initiatives %>
                   <li>
@@ -18,8 +18,8 @@
                               <a href="$Link" class="initiatives-link">                                  
                                     <img data-src="$MainImage.CroppedImage(350,234).URL" alt="$Title" src="<% include PlaceholderLargeSrc %>" class="initiatives-img">
                               </a>
-                              <H2> $Title </H2>
-                              <p> $Content.Summary(50) </p>
+                              <H2> <a href="$Link"> $Title </a> </H2>
+                              <p> $Content.Summary(50) <a href="$Link"> Continue Reading </a> </p>
                               <% else %>
 	                          <a href="$Link" class="initiatives-link no-image"> 
 	                             	<p class="NoLogo">$Title</p>  
@@ -29,8 +29,7 @@
                          
                     </li>
                   <% end_loop %>
-                        <li class="filler"></li>
-                        <li class="filler"></li>
+
 
             </ul>
         </section>
