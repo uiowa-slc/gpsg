@@ -17,8 +17,10 @@
 				        	<% loop Page(initiatives) %>
 				        		<% loop $Children %>
                               		<li> <a href="$Link"> $Title </a> </li>
-								<% end_loop %>	
+								<% end_loop %>
+								<a href="$Link"> View All </a>	
 				        	<% end_loop %>
+				        	
 				        </ul>
 				        <!--
                     	<% with Page(news) %>
@@ -37,12 +39,19 @@
 						-->
                     </div>
                     <div class="col-1-4 mod">
-                    	<h3 class="mod-title">For Staff</h3>
+                    	<h3 class="mod-title">Meetings</h3>
 				        <ul class="unstyled">
-				        	<li><a href="/vp-for-student-life/staff/staff-directory/">Staff Directory</a></li>
+<%-- 				        	<li><a href="/vp-for-student-life/staff/staff-directory/">Staff Directory</a></li>
 				        	<li><a href="/vp-for-student-life/news/tag/staff">News</a></li>
 				        	<li><a href="#">Thought Starters</a></li>
-				        	<li><a href="/vp-for-student-life/staff/faces-behind-the-scenes/">Faces Behind the Scenes</a></li>
+				        	<li><a href="/vp-for-student-life/staff/faces-behind-the-scenes/">Faces Behind the Scenes</a></li> --%>
+				        	<% loop Page(meetings) %>
+				        		<% loop $Children.reverse.limit(15) %>
+				        			<li> <a href="$Link"> $Title </a> </li>
+				        		<% end_loop %>	
+				        		<a href="$Link"> View All </a>
+				        	<% end_loop %>
+				        	
 				        </ul>
 				        <!--
 	                    <% with Page(news) %>
