@@ -18,7 +18,7 @@
 				        		<% loop $Children %>
                               		<li> <a href="$Link"> $Title </a> </li>
 								<% end_loop %>
-								<a href="$Link"> View All </a>	
+								<a href="$Link"> View All &rarr;</a>	
 				        	<% end_loop %>
 				        	
 				        </ul>
@@ -41,31 +41,15 @@
                     <div class="col-1-4 mod">
                     	<h3 class="mod-title">Meetings</h3>
 				        <ul class="unstyled">
-<%-- 				        	<li><a href="/vp-for-student-life/staff/staff-directory/">Staff Directory</a></li>
-				        	<li><a href="/vp-for-student-life/news/tag/staff">News</a></li>
-				        	<li><a href="#">Thought Starters</a></li>
-				        	<li><a href="/vp-for-student-life/staff/faces-behind-the-scenes/">Faces Behind the Scenes</a></li> --%>
 				        	<% loop Page(meetings) %>
-				        		<% loop $Children.reverse.limit(15) %>
+				        		<% loop $Children.reverse.limit(10) %>
 				        			<li> <a href="$Link"> $Title </a> </li>
 				        		<% end_loop %>	
-				        		<a href="$Link"> View All </a>
+				        		<a href="$Link"> View All &rarr;</a>
 				        	<% end_loop %>
 				        	
 				        </ul>
-				        <!--
-	                    <% with Page(news) %>
-							<% if $Entries('','event') %>
-						        <h3 class="mod-title">For Staff</h3>
-						        <ul class="unstyled">
-						        	<% loop $Entries('3','event') %>
-						        		<li><a href="$Link">$MenuTitle</a></li>
-						        	<% end_loop %>
-						        	<li><a href="{$Link}tag/event">View all Events</a></li>
-						        </ul>
-							<% end_if %>
-						<% end_with %>
-						-->
+				   
                     </div>
                 </div>
             </div>
