@@ -1,14 +1,14 @@
 .staff-coin-list{
   margin-top: 4px;
   margin-bottom: 4px;
-  // text-align: center;
+ text-align: center;
 
 
   li{
     list-style-type: none;
     display: inline-block;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     @media #{$large-up}{
       margin-bottom: 0;

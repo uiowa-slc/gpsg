@@ -6,7 +6,7 @@
             $Content
             <% if $Teams %>
             <% loop $Teams %>
-                  <h2 class="staff-title">$Title</h2>
+                  <h2 class="staff-title text-center">$Title</h2>
                   <ul class="staff-coin-list large">
                   <% loop $SortedStaffPages %>
                         <% include StaffCoin %>
