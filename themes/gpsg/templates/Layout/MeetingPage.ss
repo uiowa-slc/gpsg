@@ -9,7 +9,7 @@
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
 	    $Breadcrumbs
 		<h1>$Title</h1>
-		<h2>Meeting Date</h2> <p>$Date.NiceUS at $Time</p>
+		<h2>Meeting Date</h2> <p>$Date.NiceUS <% if $Time %>at $Time<% end_if %></p>
 		<h2>Location</h2><p>$Location</p>
 
 		<h2>Meeting Documents</h2>
@@ -20,11 +20,10 @@
 		<% if MeetingNotes %>
 			<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" alt ="Image representing a Downloadable Document" /></a>
 		<% end_if %>
-		<% if Legislation1 %>
-			<a href="$Legislation1.URL" class="btn">Legislation 1 <img src="$Legislation1.Icon" alt= "Image representing a Downloadable Document"/></a>
-		<% end_if %>
-		<% if Legislation2 %>
-			<a href="$Legislation2.URL" class="btn">Legislation 2 <img src="$Legislation2.Icon" alt = "Image representing a Downloadable Document"/></a>
+		<% if $OtherDocuments %>
+			<% loop $OtherDocuments %>
+				<a href="$URL" class="btn" target="_blank">Document $Pos<img src="$Icon" alt ="Document Icon" /></a>
+			<% end_loop %>
 		<% end_if %>	
 	</p>
 	

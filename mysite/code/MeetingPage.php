@@ -13,12 +13,15 @@ class MeetingPage extends Page {
 	private static $defaults = array(
 		"Location" => "University Capitol Centre 2520D"
 	);
+
+	private static $has_many = array (
+		"OtherDocuments" => "MeetingDocument",
+	);
 	
 	private static $has_one = array (
 		"Agenda" => "File",
 		"MeetingNotes" => "File",
-		"Legislation1" => "File",
-		"Legislation2" => "File"
+	
 	
 	);
 
@@ -36,8 +39,8 @@ class MeetingPage extends Page {
 		/*$fields->addFieldToTab("Root.Content.Main", new DropdownField("Type","Type of the Meeting", $meetingTypes)); */
 		$fields->addFieldToTab("Root.Main", new UploadField("Agenda","Upload Agenda Document"));
 		$fields->addFieldToTab("Root.Main", new UploadField("MeetingNotes","Upload Meeting Notes/Minutes Document"));
-		$fields->addFieldToTab("Root.Main", new UploadField("Legislation1","Upload Legislation 1 Document"));
-		$fields->addFieldToTab("Root.Main", new UploadField("Legislation2","Upload Legislation 2 Document"));
+		$fields->addFieldToTab("Root.Main", new UploadField("OtherDocuments","Upload one or more additional documents"));
+
 		
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Notes", "Additional Meeting Notes (optional)"));
 		
