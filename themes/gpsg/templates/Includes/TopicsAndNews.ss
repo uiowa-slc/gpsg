@@ -10,25 +10,25 @@
                     	<h3 class="mod-title">Initiatives</h3>
 				        <ul class="unstyled">
 				        	<% loop Page(initiatives) %>
-				        		<% loop $Children %>
+				        		<% loop $Children.Limit(7) %>
                               		<li> <a href="$Link"> $Title </a> </li>
 								<% end_loop %>
 								<hr />
-								<li><a href="$Link"> View All &rarr;</a></li>
+								<li><a href="$Link"> View all &rarr;</a></li>
 				        	<% end_loop %>
 				        	
 				        </ul>
 
                     </div>
                     <div class="col-1-4 mod">
-                    	<h3 class="mod-title">Meetings</h3>
+                    	<h3 class="mod-title">Lastest news</h3>
 				        <ul class="unstyled">
-				        	<% loop Page(meetings) %>
-				        		<% loop $Children.reverse.limit(10) %>
+				        	<% loop Page(news) %>
+				        		<% loop $BlogPosts.Limit(5) %>
 				        			<li> <a href="$Link"> $Title </a> </li>
 				        		<% end_loop %>	
 				        		<hr />
-				        		<li><a href="$Link"> View All &rarr;</a></li>
+				        		<li><a href="$Link"> View all &rarr;</a></li>
 				        	<% end_loop %>
 				        	
 				        </ul>

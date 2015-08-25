@@ -6,7 +6,18 @@ class Page extends SiteTree {
 
 	private static $has_one = array(
 	);
+	public function FeaturedInitiative(){
 
+		$initHolder = InitiativeHolder::get()->First();
+		if($initHolder->FeaturedInitiativeID){
+			$initiative = InitiativePage::get()->filter(array(
+				'ID' => $initHolder->FeaturedInitiativeID
+			))->First();
+			return $initiative;
+		}else{
+			return false;
+		}
+	}
 }
 class Page_Controller extends ContentController {
 
@@ -32,6 +43,7 @@ class Page_Controller extends ContentController {
 		parent::init();
 
 	}
+
 	public function Breadcrumbs($maxDepth = 20, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
 		return parent::Breadcrumbs(20, false, false, true);
 	}
