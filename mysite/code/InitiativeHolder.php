@@ -49,6 +49,8 @@ class InitiativeHolder_Controller extends Page_Controller {
 			))->sort('RAND()');
 			
 
+		}else{
+			$initiatives = InitiativePage::get()->sort('RAND()');
 		}
 		return $initiatives;
 	}
