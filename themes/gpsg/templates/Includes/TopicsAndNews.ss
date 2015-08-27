@@ -21,7 +21,7 @@
 
                     </div>
                     <div class="col-1-4 mod">
-                    	<h3 class="mod-title">Lastest news</h3>
+                    	<h3 class="mod-title">Latest news</h3>
 				        <ul class="unstyled">
 				        	<% loop Page(news) %>
 				        		<% loop $BlogPosts.Limit(5) %>
