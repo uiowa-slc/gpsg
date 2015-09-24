@@ -14,17 +14,22 @@
 
 		<h2>Meeting Documents</h2>
 		<p>
+
+		<% if $Agenda || $MeetingNotes || $OtherDocuments %>
 		<% if Agenda %>
-			<a href="$Agenda.URL" class="btn">Agenda <img src="$Agenda.Icon" /></a>
+			<a href="$Agenda.URL" class="btn">Agenda <img class="show-for-large-up"  src="$Agenda.Icon" /></a>
 		<% end_if %>
 		<% if MeetingNotes %>
-			<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" alt ="Image representing a Downloadable Document" /></a>
+			<a href="$MeetingNotes.URL" class="btn">Meeting Minutes <img src="$MeetingNotes.Icon" class="show-for-large-up" alt ="Image representing a Downloadable Document" /></a>
 		<% end_if %>
 		<% if $OtherDocuments %>
 			<% loop $OtherDocuments %>
-				<a href="$URL" class="btn" target="_blank">Document $Pos<img src="$Icon" alt ="Document Icon" /></a>
+				<a href="$URL" class="btn" target="_blank">Document $Pos<img src="$Icon" class="show-for-large-up" alt ="Document Icon" /></a>
 			<% end_loop %>
 		<% end_if %>	
+		<% else %>
+			There are no documents listed for this meeting.
+		<% end_if %>
 	</p>
 	
 		<% if Notes %>
