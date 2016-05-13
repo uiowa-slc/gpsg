@@ -7,6 +7,8 @@
 			$Content
 			
 				<h2>Upcoming meetings</h2>
+
+				<% if $UpcomingMeetings %>
 				<table class="meetings">
 			
 				<tr>
@@ -19,6 +21,9 @@
 						<% end_loop %>
 					</tbody>
 			   </table>
+			   <% else %>
+			   	<p>No upcoming meetings currently listed.</p>
+			   <% end_if %>
 			<h2>Past meetings</h2>
 				<table class="meetings">
 			
