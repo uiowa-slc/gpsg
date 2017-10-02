@@ -1671,16 +1671,16 @@
         },
         {
             "name": "silverstripe/secureassets",
-            "version": "dev-master",
+            "version": "1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-secureassets.git",
-                "reference": "8403f15f22f8ec807e60234f5c7597718036fa28"
+                "reference": "f45438899e19aee13f639685c15d8639f5154a91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-secureassets/zipball/8403f15f22f8ec807e60234f5c7597718036fa28",
-                "reference": "8403f15f22f8ec807e60234f5c7597718036fa28",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-secureassets/zipball/f45438899e19aee13f639685c15d8639f5154a91",
+                "reference": "f45438899e19aee13f639685c15d8639f5154a91",
                 "shasum": ""
             },
             "require": {
@@ -1690,11 +1690,6 @@
                 "silverstripe/cms": "Allows you to easily edit file permissions in the CMS"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -1713,7 +1708,7 @@
                 "secure",
                 "silverstripe"
             ],
-            "time": "2017-08-04 01:29:44"
+            "time": "2017-08-25 04:44:46"
         },
         {
             "name": "silverstripe/segment-field",
