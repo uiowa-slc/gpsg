@@ -31,11 +31,17 @@ $BlockArea(BeforeContent)
 			
 				<tr>
 					<th>Meeting date</th>
-					<th>Available documents</th>
+					<th>Location</th>
 				</tr>
 				    <tbody>	
 						<% loop $UpcomingMeetings %>
-							<% include MeetingRow %>
+							<tr class="$EvenOdd">
+								<td><a href="$Link">$Date.Format("F d, Y") $Time</a>
+								</td>
+								<td>
+									$Location
+								</td>
+							</tr>
 						<% end_loop %>
 					</tbody>
 			   </table>
@@ -48,10 +54,30 @@ $BlockArea(BeforeContent)
 				<tr>
 					<th>Meeting date</th>
 					<th>Available documents</th>
+					<th>Notes</th>
 				</tr>
 				    <tbody>	
 					  <% loop PastMeetings %>
-						<% include MeetingRow %>
+						<tr class="$EvenOdd">
+							<td><a href="$Link">$Date.Format("F d, Y") $Time</a>
+							</td>
+							<td class="documents">
+								<% if $Agenda %>
+									<a href="$Agenda.URL" class="btn">Agenda</a>
+								<% end_if %>
+								<% if $MeetingNotes %>
+									<a href="$MeetingNotes.URL" class="btn">Meeting Minutes</a> 
+								<% end_if %>
+								<% if $OtherDocuments %>
+									<% loop $OtherDocuments %>
+										<a href="$URL" class="btn" target="_blank">Document $Pos</a>
+									<% end_loop %>
+								<% end_if %>
+							</td>
+							<td>
+								<a href="$Link">$Notes.LimitCharacters(50) Continue reading...</a>
+							</td>
+						</tr>
 					<% end_loop %>
 					</tbody>
 			   </table>

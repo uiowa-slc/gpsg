@@ -542,12 +542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "df5fc327d829d8f2e57e882ab60d9c40f2ec26af"
+                "reference": "4b90f2e1decf0fe0404178a7c6c35133c52b413a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/df5fc327d829d8f2e57e882ab60d9c40f2ec26af",
-                "reference": "df5fc327d829d8f2e57e882ab60d9c40f2ec26af",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/4b90f2e1decf0fe0404178a7c6c35133c52b413a",
+                "reference": "4b90f2e1decf0fe0404178a7c6c35133c52b413a",
                 "shasum": ""
             },
             "require": {
@@ -597,7 +597,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2017-09-28 20:58:56"
+            "time": "2017-10-03 14:31:08"
         },
         {
             "name": "md/rss-display",
@@ -1464,12 +1464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-lumberjack.git",
-                "reference": "4c13690b0766dfd5d6348b6415c8c72c4840e7b4"
+                "reference": "b0ab3d14b3e80187c0528e1746c07c0b6c651058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/4c13690b0766dfd5d6348b6415c8c72c4840e7b4",
-                "reference": "4c13690b0766dfd5d6348b6415c8c72c4840e7b4",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/b0ab3d14b3e80187c0528e1746c07c0b6c651058",
+                "reference": "b0ab3d14b3e80187c0528e1746c07c0b6c651058",
                 "shasum": ""
             },
             "require": {
@@ -1496,7 +1496,7 @@
                 }
             ],
             "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
-            "time": "2017-09-21 04:44:28"
+            "time": "2017-10-02 20:36:04"
         },
         {
             "name": "silverstripe/mathspamprotection",

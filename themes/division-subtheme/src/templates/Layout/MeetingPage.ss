@@ -29,10 +29,10 @@ $BlockArea(BeforeContent)
 		<p>
 
 		<% if $Agenda || $MeetingNotes || $OtherDocuments %>
-		<% if Agenda %>
+		<% if $Agenda %>
 			<a href="$Agenda.URL" class="btn">Agenda</a>
 		<% end_if %>
-		<% if MeetingNotes %>
+		<% if $MeetingNotes %>
 			<a href="$MeetingNotes.URL" class="btn">Meeting Minutes</a>
 		<% end_if %>
 		<% if $OtherDocuments %>
@@ -45,7 +45,7 @@ $BlockArea(BeforeContent)
 		<% end_if %>
 	</p>
 	
-		<% if Notes %>
+		<% if $Notes %>
 			<h3>Additional Notes:</h3>
 			$Notes
 		<% end_if %>
