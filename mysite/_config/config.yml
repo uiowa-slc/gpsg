@@ -4,15 +4,4 @@ After:
   - 'framework/*'
   - 'cms/*'
 ---
-Page:
-  extensions:
-    - DivisionPage
-Page_Controller:
-  extensions:
-    - DivisionPage_Controller
-HomePageFeature:
-  extensions:
-    - HomePageFeatureExtension
-SidebarItem:
-  extensions:
-    - SidebarItemExtension
+
