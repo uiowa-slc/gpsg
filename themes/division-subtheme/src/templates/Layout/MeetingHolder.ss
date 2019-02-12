@@ -6,7 +6,7 @@ $Header
 		<% include FeaturedImage %>
 	<% end_if %>
 	$Breadcrumbs
-	
+
 <% if not $BackgroundImage %>
 	<div class="column row">
 		<div class="main-content__header">
@@ -23,20 +23,20 @@ $BlockArea(BeforeContent)
 		$BlockArea(BeforeContentConstrained)
 
 			$Content
-			
+
 				<h2>Upcoming meetings</h2>
 
 				<% if $UpcomingMeetings %>
 				<table>
-			
+
 				<tr>
 					<th>Meeting date</th>
 					<th>Location</th>
 				</tr>
-				    <tbody>	
+				    <tbody>
 						<% loop $UpcomingMeetings %>
 							<tr class="$EvenOdd">
-								<td><a href="$Link">$Date.Format("F d, Y") $Time</a>
+								<td><a href="$Link">$Date.Nice $Time</a>
 								</td>
 								<td>
 									$Location
@@ -50,23 +50,23 @@ $BlockArea(BeforeContent)
 			   <% end_if %>
 			<h2>Past meetings</h2>
 				<table>
-			
+
 				<tr>
 					<th>Meeting date</th>
 					<th>Available documents</th>
 					<th>Notes</th>
 				</tr>
-				    <tbody>	
+				    <tbody>
 					  <% loop PastMeetings %>
 						<tr class="$EvenOdd">
-							<td><a href="$Link">$Date.Format("F d, Y") $Time</a>
+							<td><a href="$Link">$Date.Nice $Time</a>
 							</td>
 							<td class="documents">
 								<% if $Agenda %>
 									<a href="$Agenda.URL" class="btn">Agenda</a>
 								<% end_if %>
 								<% if $MeetingNotes %>
-									<a href="$MeetingNotes.URL" class="btn">Meeting Minutes</a> 
+									<a href="$MeetingNotes.URL" class="btn">Meeting Minutes</a>
 								<% end_if %>
 								<% if $OtherDocuments %>
 									<% loop $OtherDocuments %>
@@ -81,10 +81,10 @@ $BlockArea(BeforeContent)
 					<% end_loop %>
 					</tbody>
 			   </table>
-			
+
 	</article>
 	<aside class="sidebar dp-sticky">
-		<% include SideNav %>
+		<% include MeetingSideNav %>
 		<% if $SideBarView %>
 			$SideBarView
 		<% end_if %>

@@ -6,7 +6,7 @@ $Header
 		<% include FeaturedImage %>
 	<% end_if %>
 	$Breadcrumbs
-	
+
 <% if not $BackgroundImage %>
 	<div class="column row">
 		<div class="main-content__header">
@@ -21,8 +21,8 @@ $BlockArea(BeforeContent)
 
 	<article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarBlocks ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
 		$BlockArea(BeforeContentConstrained)
-		
-		<h2>Meeting Date</h2> <p>$Date.NiceUS <% if $Time %>at $Time<% end_if %></p>
+
+		<h2>Meeting Date</h2> <p>$Date.Nice <% if $Time %>at $Time<% end_if %></p>
 		<h2>Location</h2><p>$Location</p>
 
 		<h2>Meeting Documents</h2>
@@ -39,19 +39,19 @@ $BlockArea(BeforeContent)
 			<% loop $OtherDocuments %>
 				<a href="$URL" class="btn" target="_blank">Document $Pos</a>
 			<% end_loop %>
-		<% end_if %>	
+		<% end_if %>
 		<% else %>
 			There are no documents listed for this meeting.
 		<% end_if %>
 	</p>
-	
+
 		<% if $Notes %>
 			<h3>Additional Notes:</h3>
 			$Notes
 		<% end_if %>
 	</article>
 	<aside class="sidebar dp-sticky">
-		<% include SideNav %>
+		<% include MeetingSideNav %>
 		<% if $SideBarView %>
 			$SideBarView
 		<% end_if %>
@@ -63,4 +63,4 @@ $BlockArea(AfterContent)
 </main>
 
 
-	    
+

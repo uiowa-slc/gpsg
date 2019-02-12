@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Assets\File;
+
 class MeetingDocument extends File {
 
 	private static $db = array(

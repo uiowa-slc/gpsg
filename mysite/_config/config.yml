@@ -1,7 +1,5 @@
 ---
-Name: mysite
-After:
-  - 'framework/*'
-  - 'cms/*'
+Name: myproject
 ---
-
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: mysite
