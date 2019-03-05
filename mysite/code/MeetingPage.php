@@ -36,7 +36,7 @@ class MeetingPage extends Page {
 		$fields = parent::getCMSFields();
 		$fields->removeFieldFromTab('Root.Main', 'Content');
 		$date_field = new DateField("Date");
-		$date_field->setConfig("showcalendar", true);
+
 
 		$meetingTypes = array ("General Senate Meeting" => "General Senate Meeting", "Committee Meeting" => "Committee Meeting");
 		$fields->addFieldToTab("Root.Main", $date_field);
