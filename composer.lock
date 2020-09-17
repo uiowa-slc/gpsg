@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b547a4ca9220bb1fb01735650f8bc03a",
+    "content-hash": "5b7997920a14b412d51ac621e64020e3",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1254,12 +1254,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "09836ebcc61b407372765b56df4e066efdcc32c8"
+                "reference": "575d18198215ce55499e80ff017c7205e86794da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/09836ebcc61b407372765b56df4e066efdcc32c8",
-                "reference": "09836ebcc61b407372765b56df4e066efdcc32c8",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/575d18198215ce55499e80ff017c7205e86794da",
+                "reference": "575d18198215ce55499e80ff017c7205e86794da",
                 "shasum": ""
             },
             "require": {
@@ -1279,7 +1279,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/3",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2020-08-25T20:00:21+00:00"
+            "time": "2020-09-03T16:06:30+00:00"
         },
         {
             "name": "md/division-analytics",
@@ -2197,16 +2197,16 @@
         },
         {
             "name": "robrichards/xmlseclibs",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robrichards/xmlseclibs.git",
-                "reference": "8d8e56ca7914440a8c60caff1a865e7dff1d9a5a"
+                "reference": "f8f19e58f26cdb42c54b214ff8a820760292f8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/8d8e56ca7914440a8c60caff1a865e7dff1d9a5a",
-                "reference": "8d8e56ca7914440a8c60caff1a865e7dff1d9a5a",
+                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/f8f19e58f26cdb42c54b214ff8a820760292f8df",
+                "reference": "f8f19e58f26cdb42c54b214ff8a820760292f8df",
                 "shasum": ""
             },
             "require": {
@@ -2231,7 +2231,7 @@
                 "xml",
                 "xmldsig"
             ],
-            "time": "2020-04-22T17:19:51+00:00"
+            "time": "2020-09-05T13:00:25+00:00"
         },
         {
             "name": "silverstripe/admin",
@@ -5016,16 +5016,16 @@
         },
         {
             "name": "undefinedoffset/silverstripe-nocaptcha",
-            "version": "2.0.5",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/silverstripe-nocaptcha.git",
-                "reference": "fc0e6129a3bfca5cf4ccf79dbb40cce8ced8c3bb"
+                "reference": "655e1448ba575e0a7a6410ae101236908d363c73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/silverstripe-nocaptcha/zipball/fc0e6129a3bfca5cf4ccf79dbb40cce8ced8c3bb",
-                "reference": "fc0e6129a3bfca5cf4ccf79dbb40cce8ced8c3bb",
+                "url": "https://api.github.com/repos/UndefinedOffset/silverstripe-nocaptcha/zipball/655e1448ba575e0a7a6410ae101236908d363c73",
+                "reference": "655e1448ba575e0a7a6410ae101236908d363c73",
                 "shasum": ""
             },
             "require": {
@@ -5066,7 +5066,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2019-09-16T20:00:32+00:00"
+            "time": "2020-09-09T12:32:34+00:00"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -5982,6 +5982,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
